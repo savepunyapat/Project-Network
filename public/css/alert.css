@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#alert-btn {
+    color: red;
+}
+a:active{
+    list-style-type: none;
+    color: red;
+}
