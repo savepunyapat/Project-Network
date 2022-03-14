@@ -1,26 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@500&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Mohave', sans-serif;
-    list-style-type: none;
-}
-a {
-    list-style-type: none;
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mitr", sans-serif;
+  list-style-type: none;
 }
-header{
-    background-color: rgb(255, 197, 72);
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 400px;
+
+a {
+    text-decoration: none;
 }
-#login-btn{
-    padding: 49%;
-    padding-top: 250px;
-    
+
+header {
+  background-color: rgb(255, 197, 72);
+  width: 100vw;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(255, 197, 72);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.122);
+}
+
+#login-btn {
+    padding: 10px 50px;
+    border: 2px solid rgb(31, 31, 31);
+    color: rgb(31, 31, 31);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#login-btn:hover {
+    background-color: rgb(31, 31, 31);
+    color: white;
 }

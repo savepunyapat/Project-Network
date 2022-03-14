@@ -1,18 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mitr", sans-serif;
+  list-style-type: none;
 }
 
-header{
+
+header {
     background-color: rgb(255, 197, 72);
-    position: relative;
     width: 100vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+h2 {
+    font-weight: 400 !important;
+    font-size: 1.5rem !important;
 }
 
 #main{
@@ -25,6 +33,7 @@ header{
 #main h1{
     position: absolute;
     top: 25%;
+    font-weight: 500;
 }
 
 #car-success{
@@ -32,11 +41,12 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 25%;
+    top: 10%;
     left: 10%;
     width: 80%;
     height: 85%;
     border: 2px solid black;
+    border-radius: 10px;
 }
 
 .car-picture{
@@ -51,11 +61,15 @@ header{
 a.pick-btn{
     position: absolute;
     color: rgb(255, 255, 255);
-    background-color: rgb(141, 226, 72);
+    background-color: rgb(112, 231, 138);
     text-decoration: none;
     padding: 1% 4%;
-    border-radius: 10%;
-    
+    border-radius: 10px;
     top: 70%;
+    transition: .4s;
+}
+
+.pick-btn:hover {
+    background-color: rgb(115, 216, 137);
 }
 

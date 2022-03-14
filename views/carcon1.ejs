@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/confirmcar.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>ยืนยันการจอง</title>
 </head>
 <body>
@@ -25,7 +21,7 @@
         <div id="car-for-choose">
             <table class="table">
                 <thead>
-                  <tr>
+                  <tr class="tableHead">
                     <th scope="col">#</th>
                     <th scope="col">Car brands</th>
                     <th scope="col">Car series</th>
@@ -33,23 +29,23 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr >
                     <th scope="row">1</th>
                     <td>Toyotu</td>
                     <td>Altus</td>
                     <td>C01</td>
                   </tr>
-                  <tr>
+                  <tr class="test">
                     <th scope="row">2</th>
                     <td>Mazdu</td>
                     <td>Mazdu 3</td>
                     <td>C02</td>
                   </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Hondu</td>
-                    <td>Citu</td>
-                    <td>C03</td>
+                  <tr >
+                    <th scope="row" class="test">3</th>
+                    <td class="test">Hondu</td>
+                    <td class="test">Citu</td>
+                    <td class="test">C03</td>
                   </tr>
                 </tbody>
               </table>
@@ -60,21 +56,23 @@
                 <li><p>รุ่น: XXXX</p></li>
                 <li><p>ราคา: XXXX</p></li>
             </ul>-->
+</div>
 
+          <div class="wrapperForm">
             <form id="information-input" action="/carcon1" method="post">
                 <label for="fname">ชื่อจริง:</label><br>
                 <input type="text" id="fname" name="fname" placeholder="นาย...." value=""><br><br>
                 <label for="lname">นามสกุล:</label><br>
                 <input type="text" id="lname" name="lname" placeholder="นามสกุล" value=""><br><br>
                 <label for="lname">เบอร์โทรศัพท์:</label><br>
-                <input type="text" id="pnumber" placeholder="098...." name="pnumber">
-                <label for="fname">เลือกวันรับรถ: เช่น 3/13/2022</label><br>
-                <input type="text" id="date" name="datepicker"><br><br>
+                <input type="text" id="pnumber" placeholder="098...." name="pnumber"><br><br>
+                <label for="fname">เลือกวันรับรถ:</label><br>
+                <input type="text" id="date" name="datepicker" placeholder="เช่น 3/13/2022"><br><br>
                 <!--<label for="lname">เลือกวันคืนรถ:</label><br>
                 <input class="datepicker" data-date-format="mm/dd/yyyy"id="returndate">-->
-                <label for="exampleFormControlSelect2">รุ่นรถ :</label>
+                <label for="exampleFormControlSelect2">รุ่นรถ :</label><br>
                 <input type="text" id="date" name="carbrand" placeholder="เช่น : C02,C03"><br><br>
-                <input type="submit" class="btn btn-dark">
+                <input type="submit" class="btn">
             </form>
         </div>
 
