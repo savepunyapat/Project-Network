@@ -13,7 +13,7 @@ var year = date.getFullYear();
 var day = date.getDate();
 var month = date.getMonth();
 month = month+1;
-datetime = month + " / " + day + " / " + year;
+datetime = month + "/" + day + "/" + year;
 
 
 mongoose.connect("mongodb+srv://save1412:save1412@cluster0.avz4t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority").then(() => {
@@ -25,7 +25,8 @@ const carSchema ={
     rpnumber:String,
     rprice:Number,
     rBrand:String,
-    rDate:String
+    rSignDate:String,
+    rGetDate:String
 }
 
 const carRent = mongoose.model("carRent",carSchema)
@@ -49,7 +50,8 @@ router.post("/carcon1",
             rlastname: req.body.lname,
             rpnumber: req.body.pnumber,
             rBrand: req.body.carbrand,
-            rDate: datetime
+            rGetDate: req.body.datepicker,
+            rSignDate: datetime
         });
         newRent.save();
         res.redirect("/carsuccess")
